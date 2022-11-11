@@ -1,0 +1,6 @@
+
+#Building CI/CD
+https://codingnconcepts.com/spring-boot/deployment-of-microservices-using-docker-and-jenkins/
+
+#git ssh-key adding
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh
