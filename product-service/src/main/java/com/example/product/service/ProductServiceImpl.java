@@ -23,7 +23,7 @@ public class ProductServiceImpl implements ProductService {
         Review review = null;
         try {
             review = reviewFeignClient.getReviewByProduct(productId);
-        }catch(Exception ex){
+        } catch(Exception ex) {
             log.error("Error while fetching reviews for product", ex);
         }
         product.setReview(review);

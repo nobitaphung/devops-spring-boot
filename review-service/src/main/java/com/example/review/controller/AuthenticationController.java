@@ -16,7 +16,9 @@ public class AuthenticationController {
     private final AuthenticationService authenticationService;
 
     @PostMapping(value = "/login")
-    public ResponseEntity<?> login(@RequestBody UserDetails userDetails) throws Exception {
+    public ResponseEntity<?> login(
+            @RequestBody
+            UserDetails userDetails) throws Exception {
 
         if (authenticationService.isAuthenticated(userDetails)) {
             return ResponseEntity.ok(authenticationService.generateJwtToken(userDetails));
